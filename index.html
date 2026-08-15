@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achref Ben Salem | Network Engineer</title>
+
+  <!-- Favicon using your PNG -->
+  <link rel="icon" type="image/png" sizes="256x256" href="favicons/favicon-256x256.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+
+  <!-- Icons + styles -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background grid -->
+  <div class="grid-bg"></div>
+
+  <!-- Page shell so theme toggle is relative -->
+  <div class="page-shell">
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+      <span class="theme-label">Auto</span>
+    </button>
+
+    <main class="hero">
+      <div class="hero-content">
+        <div class="avatar-wrapper">
+          <img src="avatar.jpg" alt="Achref Ben Salem" class="avatar-circle" />
+        </div>
+
+        <p class="hello">Hello, I'm</p>
+        <h1 class="name">Achref Ben Salem</h1>
+
+        <h2 class="typing">
+          <span id="typing-text"></span>
+          <span class="cursor">|</span>
+        </h2>
+
+        <p class="subtitle">
+          Designing, configuring and troubleshooting enterprise networks across campus,
+          data center and cloud.
+        </p>
+
+        <section class="badges">
+          <div class="badge">
+            <span class="badge-title">Core Skills</span>
+            <span class="badge-body">Routing & Switching, LAN, WLAN  BGP, OSPF, VPN</span>
+          </div>
+          <div class="badge">
+            <span class="badge-title">Vendors</span>
+            <span class="badge-body">Huawei, Cisco, Aruba, HP, Fortinet</span>
+          </div>
+          <div class="badge">
+            <span class="badge-title">Tooling</span>
+            <span class="badge-body">iMaster NCE, eSight, Visio, WLAN Planner</span>
+          </div>
+        </section>
+
+               <section class="cards">
+          <!-- Request Offer (your previous addition) -->
+          <a href="offer.html" class="card request-offer-card" target="_blank">
+            <h3><i class="fas fa-file-signature"></i> Request Offer</h3>
+            <p>Get your custom network engineering proposal in 24h</p>
+          </a>
+          <a href="https://blog.bensalem.tn" class="card" target="_blank">
+            <h3><i class="fas fa-blog"></i> Blog</h3>
+            <p>Professional achievements, certifications, awards, and career updates.</p>
+          </a>
+          <a href="https://resume.bensalem.tn" class="card" target="_blank">
+            <h3><i class="fas fa-file-alt"></i> Resume</h3>
+            <p>Full experience, certifications, and project portfolio.</p>
+          </a>
+          <!-- NEW: Testimonials card -->
+          <a href="testimonials.html" class="card testimonials-card" target="_blank">
+            <h3><i class="fas fa-star"></i> Client Reviews</h3>
+            <p>What companies say about my network deployments & support</p>
+          </a>
+        </section>
+
+        <div class="links">
+          <!-- ADDED: Request Offer button HERE (near Blog in links) -->
+          <a href="offer.html" class="link-item request-offer-link" target="_blank">
+            <i class="fas fa-file-signature"></i> Request Offer
+          </a>
+          <a href="https://blog.bensalem.tn" class="link-item" target="_blank">
+            <i class="fas fa-blog"></i> Blog
+          </a>
+          <a href="https://resume.bensalem.tn" class="link-item" target="_blank">
+            <i class="fas fa-file-alt"></i> Resume
+          </a>
+          <a href="https://www.linkedin.com/in/bensalemtn/" class="link-item" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="https://github.com/bensalemtn" class="link-item" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="mailto:achref@bensalem.tn" class="link-item">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- YOUR EXACT ORIGINAL JAVASCRIPT - UNCHANGED -->
+  <script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const body = document.body;
+    const themeLabel = document.querySelector('.theme-label');
+    const sunIcon = themeToggle.querySelector('.fa-sun');
+    const moonIcon = themeToggle.querySelector('.fa-moon');
+
+    const themes = ['light', 'dark', 'system'];
+    let currentThemeIndex = 0;
+
+    const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    systemDarkQuery.addEventListener('change', () => {
+      const saved = localStorage.getItem('theme') || 'system';
+      if (saved === 'system') {
+        applyTheme('system');
+      }
+    });
+
+    const savedTheme = localStorage.getItem('theme') || 'system';
+    currentThemeIndex = themes.indexOf(savedTheme);
+    if (currentThemeIndex === -1) currentThemeIndex = 2;
+    applyTheme(themes[currentThemeIndex]);
+
+    themeToggle.addEventListener('click', () => {
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      applyTheme(themes[currentThemeIndex]);
+    });
+
+    function applyTheme(theme) {
+      localStorage.setItem('theme', theme);
+
+      if (theme === 'light') {
+        body.classList.remove('dark-theme');
+        body.setAttribute('data-theme', 'light');
+      } else if (theme === 'dark') {
+        body.classList.add('dark-theme');
+        body.setAttribute('data-theme', 'dark');
+      } else { // system
+        body.removeAttribute('data-theme');
+        const prefersDark = systemDarkQuery.matches;
+        if (prefersDark) {
+          body.classList.add('dark-theme');
+        } else {
+          body.classList.remove('dark-theme');
+        }
+      }
+
+      themeLabel.textContent = theme.charAt(0).toUpperCase() + theme.slice(1);
+
+      if (theme === 'light') {
+        sunIcon.style.opacity = '1';
+        moonIcon.style.opacity = '0.3';
+      } else if (theme === 'dark') {
+        sunIcon.style.opacity = '0.3';
+        moonIcon.style.opacity = '1';
+      } else {
+        sunIcon.style.opacity = '0.5';
+        moonIcon.style.opacity = '0.5';
+      }
+    }
+
+    // Hide theme button when scrolled down, show only near top
+    window.addEventListener('scroll', () => {
+      const currentY = window.scrollY;
+      if (currentY > 80) {
+        themeToggle.classList.add('hidden');
+      } else {
+        themeToggle.classList.remove('hidden');
+      }
+    });
+
+    // Typing effect
+    const roles = [
+      "Network Engineer",
+      "Campus & DC Fabric Specialist",
+      "Huawei iMaster NCE Engineer",
+      "SDN & Automation Enthusiast"
+    ];
+
+    const typingText = document.getElementById("typing-text");
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function type() {
+      const current = roles[roleIndex];
+
+      if (!deleting) {
+        typingText.textContent = current.slice(0, ++charIndex);
+        if (charIndex === current.length) {
+          deleting = true;
+          setTimeout(type, 1500);
+          return;
+        }
+      } else {
+        typingText.textContent = current.slice(0, --charIndex);
+        if (charIndex === 0) {
+          deleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+      setTimeout(type, deleting ? 60 : 100);
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+</body>
+</html>

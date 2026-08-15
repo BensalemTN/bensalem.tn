@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Network Offer - Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <div class="page-shell">
+    <!-- Theme toggle -->
+    <button class="theme-toggle" id="themeToggle">
+      <i class="fa-regular fa-sun" id="iconSun"></i>
+      <i class="fa-regular fa-moon" id="iconMoon" style="display:none;"></i>
+      <span class="theme-label">Light mode</span>
+    </button>
+
+    <section class="offer-page">
+      <div class="offer-header-bar">
+        <a href="index.html" class="back-link">
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to portfolio
+        </a>
+        <h1>Request a custom network offer</h1>
+        <p>Share details about your infrastructure. Receive tailored proposal within 24-48h.</p>
+      </div>
+
+      <div class="offer-inner">
+        <form class="offer-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New Network Offer Request">
+          <input type="hidden" name="source" value="portfolio-site">
+
+          <!-- Step 1 -->
+          <div class="offer-step">
+            <h3><span class="step-number">01</span> Contact</h3>
+            <div class="offer-grid">
+              <div class="field">
+                <label>Full name *</label>
+                <input type="text" name="name" required>
+              </div>
+              <div class="field">
+                <label>Work email *</label>
+                <input type="email" name="email" required>
+              </div>
+              <div class="field">
+                <label>Company</label>
+                <input type="text" name="company">
+              </div>
+              <div class="field">
+                <label>Country/Timezone</label>
+                <input type="text" name="country" placeholder="France CET">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="offer-step">
+            <h3><span class="step-number">02</span> Environment</h3>
+            <div class="offer-grid">
+              <div class="field">
+                <label>Sites</label>
+                <select name="sites">
+                  <option>1 site</option>
+                  <option>2-3 sites</option>
+                  <option>4-10 sites</option>
+                  <option>10+ sites</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Users</label>
+                <select name="users">
+                  <option>&lt;50</option>
+                  <option>50-200</option>
+                  <option>200-500</option>
+                  <option>500+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Vendors</label>
+                <input type="text" name="vendors" placeholder="Huawei, Cisco...">
+              </div>
+              <div class="field">
+                <label>Services needed</label>
+                <div class="checkbox-group">
+                  <label><input type="checkbox" name="services[]" value="design"> Design/Review</label>
+                  <label><input type="checkbox" name="services[]" value="deploy"> Deployment</label>
+                  <label><input type="checkbox" name="services[]" value="security"> Security</label>
+                  <label><input type="checkbox" name="services[]" value="troubleshoot"> Troubleshooting</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="offer-step">
+            <h3><span class="step-number">03</span> Project</h3>
+            <div class="offer-grid">
+              <div class="field full-width">
+                <label>Goals * (What do you need?)</label>
+                <textarea name="goals" rows="4" required placeholder="Example: Design redundant campus network for 3 sites..."></textarea>
+              </div>
+              <div class="field">
+                <label>Budget</label>
+                <select name="budget">
+                  <option>Prefer not to say</option>
+                  <option>&lt;1000€</option>
+                  <option>1000-5000€</option>
+                  <option>5000-15000€</option>
+                  <option>15000€+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Timeline</label>
+                <select name="timeline">
+                  <option>Urgent (0-2 weeks)</option>
+                  <option>1-2 months</option>
+                  <option>3-6 months</option>
+                  <option>Planning phase</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="offer-footer">
+            <button type="submit" class="offer-submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Request
+            </button>
+            <p class="offer-note">You'll receive a detailed proposal by email within 48 hours</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Theme toggle (same as index.html)
+    const themeToggle = document.getElementById("themeToggle");
+    const iconSun = document.getElementById("iconSun");
+    const iconMoon = document.getElementById("iconMoon");
+    const themeLabel = document.querySelector(".theme-label");
+
+    function setTheme(dark) {
+      if (dark) {
+        document.body.classList.add("dark-theme");
+        iconSun.style.display = "none";
+        iconMoon.style.display = "inline-block";
+        themeLabel.textContent = "Dark mode";
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("dark-theme");
+        iconSun.style.display = "inline-block";
+        iconMoon.style.display = "none";
+        themeLabel.textContent = "Light mode";
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") setTheme(true);
+
+    themeToggle.addEventListener("click", () => {
+      const isDark = document.body.classList.contains("dark-theme");
+      setTheme(!isDark);
+    });
+  </script>
+</body>
+</html>
