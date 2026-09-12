@@ -1,169 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Request Network Offer - Your Name</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>Request a Network Offer - Achref Ben Salem</title>
+
+  <!-- Favicon using your PNG -->
+  <link rel="icon" type="image/png" sizes="256x256" href="favicons/favicon-256x256.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
   <div class="grid-bg"></div>
 
   <div class="page-shell">
-    <!-- Theme toggle -->
-    <button class="theme-toggle" id="themeToggle">
-      <i class="fa-regular fa-sun" id="iconSun"></i>
-      <i class="fa-regular fa-moon" id="iconMoon" style="display:none;"></i>
-      <span class="theme-label">Light mode</span>
+    <!-- EXACT SAME THEME TOGGLE as index.html -->
+    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+      <span class="theme-label">Auto</span>
     </button>
 
     <section class="offer-page">
       <div class="offer-header-bar">
         <a href="index.html" class="back-link">
           <i class="fa-solid fa-arrow-left"></i>
-          Back to portfolio
+          <span>Back to portfolio</span>
         </a>
         <h1>Request a custom network offer</h1>
-        <p>Share details about your infrastructure. Receive tailored proposal within 24-48h.</p>
+        <p>
+          Share a few details about your infrastructure and objectives. You will receive a tailored proposal by email within 24–48 hours.
+        </p>
       </div>
 
       <div class="offer-inner">
-        <form class="offer-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="hidden" name="_subject" value="New Network Offer Request">
-          <input type="hidden" name="source" value="portfolio-site">
+        <form
+          class="offer-form"
+          action="https://formspree.io/f/mlgeonrj"
+          method="POST"
+        >
+          <!-- Hidden field to know this is from your site -->
+          <input type="hidden" name="source" value="network-portfolio-site" />
 
-          <!-- Step 1 -->
+          <!-- Step 1: Contact -->
           <div class="offer-step">
-            <h3><span class="step-number">01</span> Contact</h3>
+            <h3><span class="step-number">01</span> Contact details</h3>
             <div class="offer-grid">
               <div class="field">
-                <label>Full name *</label>
-                <input type="text" name="name" required>
+                <label for="name">Full name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" />
               </div>
               <div class="field">
-                <label>Work email *</label>
-                <input type="email" name="email" required>
+                <label for="email">Work email *</label>
+                <input type="email" id="email" name="email" required placeholder="john.doe@company.com" />
               </div>
               <div class="field">
-                <label>Company</label>
-                <input type="text" name="company">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Company / organization" />
               </div>
               <div class="field">
-                <label>Country/Timezone</label>
-                <input type="text" name="country" placeholder="France CET">
+                <label for="country">Country / time zone</label>
+                <input type="text" id="country" name="country" placeholder="France · CET" />
               </div>
             </div>
           </div>
 
-          <!-- Step 2 -->
+          <!-- Step 2: Environment -->
           <div class="offer-step">
-            <h3><span class="step-number">02</span> Environment</h3>
+            <h3><span class="step-number">02</span> Current environment</h3>
             <div class="offer-grid">
               <div class="field">
-                <label>Sites</label>
-                <select name="sites">
+                <label for="sites">Number of sites</label>
+                <select id="sites" name="sites">
+                  <option value="">Select</option>
                   <option>1 site</option>
-                  <option>2-3 sites</option>
-                  <option>4-10 sites</option>
+                  <option>2–3 sites</option>
+                  <option>4–10 sites</option>
                   <option>10+ sites</option>
                 </select>
               </div>
               <div class="field">
-                <label>Users</label>
-                <select name="users">
-                  <option>&lt;50</option>
-                  <option>50-200</option>
-                  <option>200-500</option>
+                <label for="users">Approx. users</label>
+                <select id="users" name="users">
+                  <option value="">Select</option>
+                  <option>&lt; 50</option>
+                  <option>50–200</option>
+                  <option>200–500</option>
                   <option>500+</option>
                 </select>
               </div>
               <div class="field">
-                <label>Vendors</label>
-                <input type="text" name="vendors" placeholder="Huawei, Cisco...">
-              </div>
-              <div class="field">
                 <label>Services needed</label>
                 <div class="checkbox-group">
-                  <label><input type="checkbox" name="services[]" value="design"> Design/Review</label>
-                  <label><input type="checkbox" name="services[]" value="deploy"> Deployment</label>
-                  <label><input type="checkbox" name="services[]" value="security"> Security</label>
-                  <label><input type="checkbox" name="services[]" value="troubleshoot"> Troubleshooting</label>
+                  <label><input type="checkbox" name="services" value="design" /> Network design / review</label>
+                  <label><input type="checkbox" name="services" value="deployment" /> Deployment / migration</label>
+                  <label><input type="checkbox" name="services" value="security" /> Security / firewalling</label>
+                  <label><input type="checkbox" name="services" value="wireless" /> Wireless / WLAN</label>
+                  <label><input type="checkbox" name="services" value="troubleshooting" /> Troubleshooting</label>
+                  <label><input type="checkbox" name="services" value="support" /> Ongoing support</label>
                 </div>
               </div>
+              <div class="field">
+                <label for="vendors">Preferred vendors</label>
+                <input
+                  type="text"
+                  id="vendors"
+                  name="vendors"
+                  placeholder="Huawei, Cisco, Fortinet, other…"
+                />
+              </div>
             </div>
           </div>
 
-          <!-- Step 3 -->
+          <!-- Step 3: Project details -->
           <div class="offer-step">
-            <h3><span class="step-number">03</span> Project</h3>
+            <h3><span class="step-number">03</span> Project scope & timeline</h3>
             <div class="offer-grid">
               <div class="field full-width">
-                <label>Goals * (What do you need?)</label>
-                <textarea name="goals" rows="4" required placeholder="Example: Design redundant campus network for 3 sites..."></textarea>
+                <label for="goals">What do you want to achieve? *</label>
+                <textarea
+                  id="goals"
+                  name="goals"
+                  rows="4"
+                  required
+                  placeholder="Example: Design a redundant campus network for 3 sites, integrate existing firewalls, and prepare for a future SD-WAN rollout."
+                ></textarea>
               </div>
               <div class="field">
-                <label>Budget</label>
-                <select name="budget">
-                  <option>Prefer not to say</option>
-                  <option>&lt;1000�</option>
-                  <option>1000-5000�</option>
-                  <option>5000-15000�</option>
-                  <option>15000�+</option>
+                <label for="budget">Estimated budget (optional)</label>
+                <select id="budget" name="budget">
+                  <option value="">Prefer not to say</option>
+                  <option>&lt; 1 000 €</option>
+                  <option>1 000 – 5 000 €</option>
+                  <option>5 000 – 15 000 €</option>
+                  <option>15 000 € +</option>
                 </select>
               </div>
               <div class="field">
-                <label>Timeline</label>
-                <select name="timeline">
-                  <option>Urgent (0-2 weeks)</option>
-                  <option>1-2 months</option>
-                  <option>3-6 months</option>
-                  <option>Planning phase</option>
+                <label for="timeline">Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select</option>
+                  <option>Urgent (0–2 weeks)</option>
+                  <option>Short term (1–2 months)</option>
+                  <option>Medium term (3–6 months)</option>
+                  <option>Planning / exploring</option>
                 </select>
+              </div>
+              <div class="field full-width">
+                <label for="extra">Anything else you want to share?</label>
+                <textarea
+                  id="extra"
+                  name="extra"
+                  rows="3"
+                  placeholder="Links to diagrams, constraints, technologies you want to keep, etc."
+                ></textarea>
               </div>
             </div>
           </div>
 
+          <!-- Step 4: Call to action -->
           <div class="offer-footer">
             <button type="submit" class="offer-submit">
-              <i class="fa-solid fa-paper-plane"></i> Send Request
+              <i class="fa-solid fa-paper-plane-top"></i>
+              <span>Send my request</span>
             </button>
-            <p class="offer-note">You'll receive a detailed proposal by email within 48 hours</p>
+            <p class="offer-note">
+              By submitting this form, you agree to be contacted by email with questions and a detailed proposal.
+            </p>
           </div>
         </form>
       </div>
     </section>
   </div>
 
+  <!-- EXACT SAME THEME JAVASCRIPT as index.html -->
   <script>
-    // Theme toggle (same as index.html)
-    const themeToggle = document.getElementById("themeToggle");
-    const iconSun = document.getElementById("iconSun");
-    const iconMoon = document.getElementById("iconMoon");
-    const themeLabel = document.querySelector(".theme-label");
+    const themeToggle = document.querySelector('.theme-toggle');
+    const body = document.body;
+    const themeLabel = document.querySelector('.theme-label');
+    const sunIcon = themeToggle.querySelector('.fa-sun');
+    const moonIcon = themeToggle.querySelector('.fa-moon');
 
-    function setTheme(dark) {
-      if (dark) {
-        document.body.classList.add("dark-theme");
-        iconSun.style.display = "none";
-        iconMoon.style.display = "inline-block";
-        themeLabel.textContent = "Dark mode";
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.body.classList.remove("dark-theme");
-        iconSun.style.display = "inline-block";
-        iconMoon.style.display = "none";
-        themeLabel.textContent = "Light mode";
-        localStorage.setItem("theme", "light");
+    const themes = ['light', 'dark', 'system'];
+    let currentThemeIndex = 0;
+
+    const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    systemDarkQuery.addEventListener('change', () => {
+      const saved = localStorage.getItem('theme') || 'system';
+      if (saved === 'system') {
+        applyTheme('system');
       }
+    });
+
+    const savedTheme = localStorage.getItem('theme') || 'system';
+    currentThemeIndex = themes.indexOf(savedTheme);
+    if (currentThemeIndex === -1) currentThemeIndex = 2;
+    applyTheme(themes[currentThemeIndex]);
+
+    themeToggle.addEventListener('click', () => {
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      applyTheme(themes[currentThemeIndex]);
+    });
+
+    function applyTheme(theme) {
+      localStorage.setItem('theme', theme);
+
+      if (theme === 'light') {
+        body.classList.remove('dark-theme');
+        body.setAttribute('data-theme', 'light');
+        sunIcon.style.opacity = '1';
+        moonIcon.style.opacity = '0.3';
+      } else if (theme === 'dark') {
+        body.classList.add('dark-theme');
+        body.setAttribute('data-theme', 'dark');
+        sunIcon.style.opacity = '0.3';
+        moonIcon.style.opacity = '1';
+      } else { // system
+        body.removeAttribute('data-theme');
+        const prefersDark = systemDarkQuery.matches;
+        if (prefersDark) {
+          body.classList.add('dark-theme');
+        } else {
+          body.classList.remove('dark-theme');
+        }
+        sunIcon.style.opacity = '0.5';
+        moonIcon.style.opacity = '0.5';
+      }
+
+      themeLabel.textContent = theme.charAt(0).toUpperCase() + theme.slice(1);
     }
 
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") setTheme(true);
-
-    themeToggle.addEventListener("click", () => {
-      const isDark = document.body.classList.contains("dark-theme");
-      setTheme(!isDark);
+    // Hide theme button when scrolled (SAME as index.html)
+    window.addEventListener('scroll', () => {
+      const currentY = window.scrollY;
+      if (currentY > 80) {
+        themeToggle.classList.add('hidden');
+      } else {
+        themeToggle.classList.remove('hidden');
+      }
     });
   </script>
 </body>
