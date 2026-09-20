@@ -2022,3 +2022,35 @@ body.dark-theme .article-tags span {
   }
 
 }
+
+/* =========================================================
+   ARTICLE IMAGES
+   ========================================================= */
+
+.article-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.article-images img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .article-images {
+    grid-template-columns: 1fr;
+  }
+
+  .article-images img {
+    max-width: 100%;
+  }
+}	
