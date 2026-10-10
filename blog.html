@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Achref Ben Salem | Network Engineer</title>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Achref Ben Salem | Professional Journal
+  </title>
 
   <!-- Favicon using your PNG -->
   <link rel="icon" type="image/png" sizes="256x256" href="favicons/favicon-256x256.png" />
@@ -11,215 +20,1856 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
 
-  <!-- Icons + styles -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome - same version/style as main website -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+
+  <!-- Blog CSS -->
+  <link
+    rel="stylesheet"
+    href="blog-style.css"
+  >
+
 </head>
+
+
 <body>
-  <!-- Animated background grid -->
+
+
+  <!-- =====================================================
+       SAME ANIMATED GRID AS MAIN WEBSITE
+       ===================================================== -->
+
   <div class="grid-bg"></div>
 
-  <!-- Page shell so theme toggle is relative -->
+
+  <!-- =====================================================
+       PAGE SHELL
+       ===================================================== -->
+
   <div class="page-shell">
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+
+
+    <!-- ===================================================
+         SAME THEME BUTTON AS MAIN WEBSITE
+
+         Light → Dark → System
+         =================================================== -->
+
+    <button
+      class="theme-toggle"
+      title="Toggle theme"
+      aria-label="Toggle theme"
+    >
+
       <i class="fas fa-sun"></i>
+
       <i class="fas fa-moon"></i>
-      <span class="theme-label">Auto</span>
+
+      <span class="theme-label">
+        System
+      </span>
+
     </button>
 
+
+
+    <!-- ===================================================
+         MAIN HERO
+         SAME STYLE AS MAIN PORTFOLIO
+         =================================================== -->
+
     <main class="hero">
+
+
       <div class="hero-content">
+
+
+        <!-- =================================================
+             SAME AVATAR
+             ================================================= -->
+
         <div class="avatar-wrapper">
-          <img src="avatar.jpg" alt="Achref Ben Salem" class="avatar-circle" />
+
+          <img
+            src="avatar.jpg"
+            alt="Achref Ben Salem"
+            class="avatar-circle"
+          >
+
         </div>
 
-        <p class="hello">Hello, I'm</p>
-        <h1 class="name">Achref Ben Salem</h1>
 
-        <h2 class="typing">
-          <span id="typing-text"></span>
-          <span class="cursor">|</span>
-        </h2>
+        <!-- =================================================
+             SAME HELLO
+             ================================================= -->
 
-        <p class="subtitle">
-          Designing, configuring and troubleshooting enterprise networks across campus,
-          data center and cloud.
+        <p class="hello">
+          Hello, I'm
         </p>
 
-        <section class="badges">
-          <div class="badge">
-            <span class="badge-title">Core Skills</span>
-            <span class="badge-body">Routing & Switching, LAN, WLAN  BGP, OSPF, VPN</span>
+
+        <!-- =================================================
+             SAME NAME
+             ================================================= -->
+
+        <h1 class="name">
+          Achref Ben Salem
+        </h1>
+
+
+        <!-- =================================================
+             SAME TYPING EFFECT
+             ================================================= -->
+
+        <h2 class="typing">
+
+          <span id="typing-text"></span>
+
+          <span class="cursor">
+            |
+          </span>
+
+        </h2>
+
+
+        <!-- =================================================
+             SAME SUBTITLE
+             ================================================= -->
+
+        <p class="subtitle">
+
+          Designing, configuring and troubleshooting
+          enterprise networks across campus,
+          data center and cloud.
+
+        </p>
+
+
+
+        <!-- =================================================
+             BLOG INTRODUCTION
+             ================================================= -->
+
+        <section class="journal-intro">
+
+
+          <div class="journal-label">
+
+            <i class="fas fa-blog"></i>
+
+            Professional Journal
+
           </div>
-          <div class="badge">
-            <span class="badge-title">Vendors</span>
-            <span class="badge-body">Huawei, Cisco, Aruba, HP, Fortinet</span>
-          </div>
-          <div class="badge">
-            <span class="badge-title">Tooling</span>
-            <span class="badge-body">iMaster NCE, eSight, Visio, WLAN Planner</span>
-          </div>
+
+
+          <h2>
+
+            Career updates, achievements
+            <span>&amp;</span>
+            professional experiences.
+
+          </h2>
+
+
+          <p>
+
+            A personal journal documenting my career
+            journey, certifications, projects, training
+            activities, technical experiences and
+            professional milestones.
+
+          </p>
+
+
         </section>
 
-        <!-- BIG RECTANGLES - ADDED REQUEST OFFER BUTTON HERE (near Blog/Resume) -->
-        <section class="cards">
-          <!-- ADDED: Request Offer card FIRST position -->
-          <a href="offer.html" class="card request-offer-card">
-            <h3><i class="fas fa-file-signature"></i> Request Offer</h3>
-            <p>Get your custom network engineering proposal in 24h</p>
-          </a>
-          <a href="blog.html" class="card">
-            <h3><i class="fas fa-blog"></i> Blog</h3>
-            <p>Professional achievements, certifications, awards, and career updates.</p>
-          </a>
-          <a href="resume.html" class="card">
-            <h3><i class="fas fa-file-alt"></i> Resume</h3>
-            <p>Full experience, certifications, and project portfolio.</p>
-          </a>
-		    <!-- NEW: Testimonials card -->
-		  <a href="testimonials.html" class="card testimonials-card">
-			<h3><i class="fas fa-star"></i> Client Reviews</h3>
-			<p>What companies say about my network deployments & support</p>
-		  </a>
+
+
+        <!-- =================================================
+             BLOG FILTERS
+             ================================================= -->
+
+        <nav
+          class="journal-filters"
+          id="journalFilters"
+        >
+
+
+          <button
+            class="journal-filter active"
+            data-category="all"
+          >
+            All
+          </button>
+
+
+          <button
+            class="journal-filter"
+            data-category="career"
+          >
+            Career
+          </button>
+
+
+          <button
+            class="journal-filter"
+            data-category="certifications"
+          >
+            Certifications
+          </button>
+
+
+          <button
+            class="journal-filter"
+            data-category="projects"
+          >
+            Projects
+          </button>
+
+
+          <button
+            class="journal-filter"
+            data-category="training"
+          >
+            Training
+          </button>
+
+
+          <button
+            class="journal-filter"
+            data-category="technical"
+          >
+            Technical
+          </button>
+		  
+		  <button
+            class="journal-filter"
+            data-category="awards"
+          >
+            Awards
+          </button>
+
+        </nav>
+
+
+
+        <!-- =================================================
+             ARTICLES
+             ================================================= -->
+
+        <section
+          class="journal-cards"
+          id="journalCards"
+        >
+
+
+		 <!-- ===============================================
+			 ARTICLE 18
+			 =============================================== -->
+
+		<article
+		  class="journal-card"
+		  data-category="training"
+		  data-article="hcia-training-algeria-telecom"
+		>
+
+		  <div class="journal-card-top">
+
+			<span class="journal-category">
+			  Training
+			</span>
+
+			<span class="journal-year">
+			  September 2026
+			</span>
+
+		  </div>
+
+
+		  <h3>
+			HCIA-Security Training for Algeria Telecom
+		  </h3>
+
+
+		  <p>
+
+			Recently delivered a five-day Huawei HCIA-Security
+			training program for Algeria Telecom, combining
+			security concepts, firewall technologies and hands-on practice.
+
+		  </p>
+
+
+		  <div class="journal-card-bottom">
+
+			<span>
+			  <i class="far fa-clock"></i>
+			  Huawei HCIA-Security
+			</span>
+
+
+			<button class="read-update">
+
+			  Read update
+
+			  <i class="fas fa-arrow-right"></i>
+
+			</button>
+
+		  </div>
+
+		</article>
+
+
+          <!-- ===============================================
+               ARTICLE 2
+               =============================================== -->
+
+          <article
+            class="journal-card"
+            data-category="certifications"
+            data-article="cisco-certification"
+          >
+
+            <div class="journal-card-top">
+
+              <span class="journal-category">
+                Certifications
+              </span>
+
+              <span class="journal-year">
+                July 2026
+              </span>
+
+
+            </div>
+
+
+            <h3>
+              Cisco Certification Renewed Until 2029
+            </h3>
+
+
+            <p>
+
+              A new milestone in my Cisco certification
+              journey after successfully completing a
+              security-focused exam.
+
+            </p>
+
+
+            <div class="journal-card-bottom">
+
+              <span>
+                <i class="far fa-clock"></i>
+                Certification
+              </span>
+
+
+              <button class="read-update">
+
+                Read update
+
+                <i class="fas fa-arrow-right"></i>
+
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===============================================
+               ARTICLE 4
+               =============================================== -->
+
+          <article
+            class="journal-card"
+            data-category="projects"
+            data-article="hld"
+          >
+
+            <div class="journal-card-top">
+
+              <span class="journal-category">
+                Projects
+              </span>
+
+              <span class="journal-year">
+                2026
+              </span>
+
+            </div>
+
+
+            <h3>
+              Enterprise Network Design &amp; HLD
+            </h3>
+
+
+            <p>
+
+              Working on High-Level Design documentation
+              for enterprise network infrastructure and
+              multi-technology environments.
+
+            </p>
+
+
+            <div class="journal-card-bottom">
+
+              <span>
+                <i class="far fa-clock"></i>
+                Network Design
+              </span>
+
+
+              <button class="read-update">
+
+                Read update
+
+                <i class="fas fa-arrow-right"></i>
+
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===============================================
+               ARTICLE 7
+               =============================================== -->
+
+          <article
+            class="journal-card"
+            data-category="training"
+            data-article="instructor"
+          >
+
+            <div class="journal-card-top">
+
+              <span class="journal-category">
+                Training
+              </span>
+
+              <span class="journal-year">
+                2026
+              </span>
+
+            </div>
+
+
+            <h3>
+              From Engineer to Instructor
+            </h3>
+
+
+            <p>
+
+              Sharing technical knowledge has become an
+              important part of my professional journey
+              through Huawei technical training activities.
+
+            </p>
+
+
+            <div class="journal-card-bottom">
+
+              <span>
+                <i class="far fa-clock"></i>
+                Knowledge Sharing
+              </span>
+
+
+              <button class="read-update">
+
+                Read update
+
+                <i class="fas fa-arrow-right"></i>
+
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- ===============================================
+               ARTICLE 9
+               =============================================== -->
+
+          <article
+            class="journal-card"
+            data-category="technical"
+            data-article="wlan"
+          >
+
+            <div class="journal-card-top">
+
+              <span class="journal-category">
+                Technical
+              </span>
+
+              <span class="journal-year">
+                2026
+              </span>
+
+            </div>
+
+
+            <h3>
+              Huawei WLAN &amp; iMaster NCE Experience
+            </h3>
+
+
+            <p>
+
+              Working with Huawei campus networking
+              technologies, AirEngine access points and
+              iMaster NCE Campus management.
+
+            </p>
+
+
+            <div class="journal-card-bottom">
+
+              <span>
+                <i class="far fa-clock"></i>
+                WLAN &amp; Campus
+              </span>
+
+
+              <button class="read-update">
+
+                Read update
+
+                <i class="fas fa-arrow-right"></i>
+
+              </button>
+
+            </div>
+
+          </article>
+
+		  
+			<!-- ===============================================
+				 ARTICLE 24
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="projects"
+			  data-article="libyan-spider-datacenter"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Projects
+				</span>
+
+				<span class="journal-year">
+				  December 2023
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Libyan Spider Data Center — Network Infrastructure Design
+			  </h3>
+
+
+			  <p>
+
+				Designed and documented a complete Low-Level Design
+				network infrastructure for the Libyan Spider data center
+				project in Tripoli.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Network Design
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+		  
+				<!-- ===============================================
+				 ARTICLE 12
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="career"
+			  data-article="farewell-huawei"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Career
+				</span>
+
+				<span class="journal-year">
+				  November 2023
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Farewell to Huawei After Nearly Four Incredible Years
+			  </h3>
+
+
+			  <p>
+
+				Reflecting back on an incredible chapter as I bid farewell
+				to Huawei after nearly four fulfilling years. Grateful for
+				the invaluable experiences and cherished connections.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Career Milestone
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+						
+			<!-- ===============================================
+				 ARTICLE 25
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="training"
+			  data-article="huawei-trainer-prologic"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Training
+				</span>
+
+				<span class="journal-year">
+				  October 2023
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Huawei Trainer — Cloud Campus Training for BARAKA Bank
+			  </h3>
+
+
+			  <p>
+
+				Delivered Huawei Cloud Campus training for BARAKA Bank
+				engineers, focusing on Huawei SDN, iMaster NCE Campus
+				and Data Center technologies.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Huawei Training
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+
+			<!-- ===============================================
+				 ARTICLE 16
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="cisco-security-core"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  June 2023
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Cisco Certified Specialist - Security Core
+			  </h3>
+
+
+			  <p>
+
+				Achieved the Cisco Certified Specialist - Security Core
+				certification, helping me recertify my CCNP Enterprise
+				just before it expired.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Cisco Security
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+		  
+		  <!-- ===============================================
+				 ARTICLE 11
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="awards"
+			  data-article="huawei-network-protection-pioneer"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Awards
+				</span>
+
+				<span class="journal-year">
+				  March 2023
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				First-Ranked Network Protection Pioneer by Huawei
+			  </h3>
+
+
+			  <p>
+
+				Honored to be awarded as the first-ranked
+				Network Protection Pioneer by Huawei.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Huawei &amp; Network Security
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+
+			<!-- ===============================================
+				 ARTICLE 19
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="fortinet-nse7"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  June 2021
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Fortinet NSE 7 Network Security Architect
+			  </h3>
+
+
+			  <p>
+
+				Proud to achieve the Fortinet NSE 7 Network Security Architect
+				certification, marking another important milestone in my
+				network security journey.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Fortinet Security
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 17
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="hcie-written-exam"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  July 2020
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Huawei HCIE Written Exam Achievement
+			  </h3>
+
+
+			  <p>
+
+				After months of hard work and perseverance, I am delighted
+				to share a personal achievement: successfully passing the
+				Huawei HCIE written exam.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Huawei HCIE
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+			 ARTICLE 13
+			 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="ceh-certification"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  June 2020
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Officially Certified Ethical Hacker
+			  </h3>
+
+
+			  <p>
+
+				A major milestone in my cybersecurity journey:
+				becoming an officially certified Ethical Hacker
+				from EC-Council.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Cybersecurity
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 31
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="jncia-sec"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  June 2020
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				JNCIA-SEC — Expanding My Network Security Expertise
+			  </h3>
+
+
+			  <p>
+
+				After achieving CCNA Security and HCIA Security,
+				I am happy to earn the Juniper Networks Certified
+				Associate Security certification and continue
+				developing my network security skills.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Network Security
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 14
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="hcia-security"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  March 2020
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				HCIA Security Certification with the Highest Score
+			  </h3>
+
+
+			  <p>
+
+				Another step towards the Huawei ICT global regional
+				competition preparation, achieving the HCIA Security
+				certification with the highest score.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Huawei Security
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+		<!-- ===============================================
+			 ARTICLE 23
+			 =============================================== -->
+
+		<article
+		  class="journal-card"
+		  data-category="certifications"
+		  data-article="ccna-security"
+		>
+
+		  <div class="journal-card-top">
+
+			<span class="journal-category">
+			  Certifications
+			</span>
+
+			<span class="journal-year">
+			  February 2020
+			</span>
+
+		  </div>
+
+
+		  <h3>
+			CCNA Security — One Day Before Retirement
+		  </h3>
+
+
+		  <p>
+
+			Happy to have passed the CCNA Security certification
+			just one day before Cisco officially retired the
+			certification.
+
+		  </p>
+
+
+		  <div class="journal-card-bottom">
+
+			<span>
+			  <i class="far fa-clock"></i>
+			  Cisco Security
+			</span>
+
+
+			<button class="read-update">
+
+			  Read update
+
+			  <i class="fas fa-arrow-right"></i>
+
+			</button>
+
+		  </div>
+
+		</article>			
+			
+			<!-- ===============================================
+				 ARTICLE 21
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="hcip-routing-switching"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  January 2020
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Huawei HCIP Routing &amp; Switching Certification
+			  </h3>
+
+
+			  <p>
+
+				Achieved the Huawei HCIP Routing &amp; Switching certification
+				through the Fast Track path, building on my existing CCNP
+				Routing &amp; Switching certification.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Huawei Networking
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 22
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="ccnp-routing-switching"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  December 2019
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				CCNP Routing &amp; Switching Certification
+			  </h3>
+
+
+			  <p>
+
+				Successfully completed the TS exam after passing the
+				Switch and Route exams, earning the CCNP Routing &amp; Switching
+				certification — the best way to end the year.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Cisco Networking
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>			
+			
+			<!-- ===============================================
+				 ARTICLE 15
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="awards"
+			  data-article="huawei-ict-competition"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Awards
+				</span>
+
+				<span class="journal-year">
+				  December 2019
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				Huawei ICT Competition — Gold Cup
+			  </h3>
+
+
+			  <p>
+
+				Honored to participate in the Huawei ICT Competition
+				with the TEKUP team and be awarded the Gold Cup after
+				competing in R&amp;S, Security and WLAN.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Huawei ICT Competition
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 30
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="jncda-design"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  May 2019
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				JNCDA — My First Network Design Certification
+			  </h3>
+
+
+			  <p>
+
+				Happy to achieve the Juniper Networks Certified Design
+				Associate certification, marking my first certification
+				focused specifically on network design.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Network Design
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 29
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="jncia-junos"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  March 2019
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				JNCIA-Junos — Expanding My Juniper Networking Skills
+			  </h3>
+
+
+			  <p>
+
+				After discovering the Juniper domain through JNCIA Cloud
+				last month, I am happy to achieve the JNCIA-Junos
+				certification and explore Juniper networking technologies.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Juniper Certification
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 29
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="jncia-cloud"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  February 2019
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				JNCIA-Cloud — Discovering the Juniper Cloud Domain
+			  </h3>
+
+
+			  <p>
+
+				Happy to earn my first Juniper certification,
+				JNCIA-Cloud, and take my first step into the
+				Juniper Networks cloud ecosystem.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Juniper Certification
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 28
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="ccna-routing-switching"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  January 2019
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				CCNA Routing & Switching — Cisco Associate Level
+			  </h3>
+
+
+			  <p>
+
+				One month after earning my Huawei HCNA,
+				I am happy to achieve the Cisco CCNA Routing & Switching
+				certification and strengthen my networking foundation.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Cisco Certification
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 27
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="hcna-routing-switching"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  December 2018
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				HCNA Routing & Switching — My First Huawei Certification
+			  </h3>
+
+
+			  <p>
+
+				Happy to earn my first Huawei certification,
+				HCNA Routing & Switching, after building a strong
+				networking foundation with Cisco CCENT.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Huawei Certification
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+
+			<!-- ===============================================
+				 ARTICLE 20
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="lpic-1"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  July 2018
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				LPIC-1 Linux Administrator Certification
+			  </h3>
+
+
+			  <p>
+
+				After passing the LPI 101 exam, I completed the LPI 102
+				and officially obtained the LPIC-1 Linux Administrator
+				certification.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  Linux Administration
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+			
+			<!-- ===============================================
+				 ARTICLE 26
+				 =============================================== -->
+
+			<article
+			  class="journal-card"
+			  data-category="certifications"
+			  data-article="ccent-first-certification"
+			>
+
+			  <div class="journal-card-top">
+
+				<span class="journal-category">
+				  Certifications
+				</span>
+
+				<span class="journal-year">
+				  May 2018
+				</span>
+
+			  </div>
+
+
+			  <h3>
+				CCENT — The Beginning of My Certification Journey
+			  </h3>
+
+
+			  <p>
+
+				Happy to have passed the ICND1 exam and earned my
+				first Cisco certification — a milestone that marked
+				the beginning of my professional networking journey.
+
+			  </p>
+
+
+			  <div class="journal-card-bottom">
+
+				<span>
+				  <i class="far fa-clock"></i>
+				  First Certification
+				</span>
+
+
+				<button class="read-update">
+
+				  Read update
+
+				  <i class="fas fa-arrow-right"></i>
+
+				</button>
+
+			  </div>
+
+			</article>
+
+
         </section>
 
-        <div class="links">
-          <!-- ADDED: Request Offer button HERE (near Blog in links) -->
-          <a href="offer.html" class="link-item request-offer-link" target="_blank">
-            <i class="fas fa-file-signature"></i> Request Offer
-          </a>
-          <a href="https://blog.bensalem.tn" class="link-item" target="_blank">
-            <i class="fas fa-blog"></i> Blog
-          </a>
-          <a href="https://resume.bensalem.tn" class="link-item" target="_blank">
-            <i class="fas fa-file-alt"></i> Resume
-          </a>
-		  <a href="testimonials.html" class="link-item" target="_blank">
-			  <i class="fas fa-star"></i> Reviews
-			</a>
 
-          <a href="https://www.linkedin.com/in/bensalemtn/" class="link-item" target="_blank" rel="noopener">
-            <i class="fab fa-linkedin-in"></i> LinkedIn
+
+        <!-- =================================================
+             RETURN TO PORTFOLIO
+             ================================================= -->
+
+        <div class="journal-back">
+
+          <a
+            href="https://bensalem.tn"
+            class="link-item"
+          >
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Portfolio
+
           </a>
-          <a href="https://github.com/bensalemtn" class="link-item" target="_blank" rel="noopener">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="mailto:achref@bensalem.tn" class="link-item">
-            <i class="fas fa-envelope"></i> Contact
-          </a>
+
         </div>
+
+
       </div>
+
     </main>
+
   </div>
 
-  <!-- YOUR EXACT ORIGINAL JAVASCRIPT - UNCHANGED -->
-  <script>
-    const themeToggle = document.querySelector('.theme-toggle');
-    const body = document.body;
-    const themeLabel = document.querySelector('.theme-label');
-    const sunIcon = themeToggle.querySelector('.fa-sun');
-    const moonIcon = themeToggle.querySelector('.fa-moon');
 
-    const themes = ['light', 'dark', 'system'];
-    let currentThemeIndex = 0;
 
-    const systemDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    systemDarkQuery.addEventListener('change', () => {
-      const saved = localStorage.getItem('theme') || 'system';
-      if (saved === 'system') {
-        applyTheme('system');
-      }
-    });
+  <!-- =====================================================
+       ARTICLE MODAL
+       ===================================================== -->
 
-    const savedTheme = localStorage.getItem('theme') || 'system';
-    currentThemeIndex = themes.indexOf(savedTheme);
-    if (currentThemeIndex === -1) currentThemeIndex = 2;
-    applyTheme(themes[currentThemeIndex]);
+  <div
+    class="article-modal"
+    id="articleModal"
+    aria-hidden="true"
+  >
 
-    themeToggle.addEventListener('click', () => {
-      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-      applyTheme(themes[currentThemeIndex]);
-    });
 
-    function applyTheme(theme) {
-      localStorage.setItem('theme', theme);
+    <div
+      class="article-overlay"
+      id="articleOverlay"
+    ></div>
 
-      if (theme === 'light') {
-        body.classList.remove('dark-theme');
-        body.setAttribute('data-theme', 'light');
-      } else if (theme === 'dark') {
-        body.classList.add('dark-theme');
-        body.setAttribute('data-theme', 'dark');
-      } else { // system
-        body.removeAttribute('data-theme');
-        const prefersDark = systemDarkQuery.matches;
-        if (prefersDark) {
-          body.classList.add('dark-theme');
-        } else {
-          body.classList.remove('dark-theme');
-        }
-      }
 
-      themeLabel.textContent = theme.charAt(0).toUpperCase() + theme.slice(1);
+    <article class="article-window">
 
-      if (theme === 'light') {
-        sunIcon.style.opacity = '1';
-        moonIcon.style.opacity = '0.3';
-      } else if (theme === 'dark') {
-        sunIcon.style.opacity = '0.3';
-        moonIcon.style.opacity = '1';
-      } else {
-        sunIcon.style.opacity = '0.5';
-        moonIcon.style.opacity = '0.5';
-      }
-    }
 
-    // Hide theme button when scrolled down, show only near top
-    window.addEventListener('scroll', () => {
-      const currentY = window.scrollY;
-      if (currentY > 80) {
-        themeToggle.classList.add('hidden');
-      } else {
-        themeToggle.classList.remove('hidden');
-      }
-    });
+      <button
+        class="article-close"
+        id="articleClose"
+        aria-label="Close article"
+      >
 
-    // Typing effect
-    const roles = [
-      "Network Engineer",
-      "Campus & DC Fabric Specialist",
-      "Huawei iMaster NCE Engineer",
-      "SDN & Automation Enthusiast"
-    ];
+        <i class="fas fa-xmark"></i>
 
-    const typingText = document.getElementById("typing-text");
-    let roleIndex = 0;
-    let charIndex = 0;
-    let deleting = false;
+      </button>
 
-    function type() {
-      const current = roles[roleIndex];
 
-      if (!deleting) {
-        typingText.textContent = current.slice(0, ++charIndex);
-        if (charIndex === current.length) {
-          deleting = true;
-          setTimeout(type, 1500);
-          return;
-        }
-      } else {
-        typingText.textContent = current.slice(0, --charIndex);
-        if (charIndex === 0) {
-          deleting = false;
-          roleIndex = (roleIndex + 1) % roles.length;
-        }
-      }
-      setTimeout(type, deleting ? 60 : 100);
-    }
+      <div class="article-header">
 
-    document.addEventListener("DOMContentLoaded", type);
-  </script>
+
+        <div class="article-meta">
+
+          <span
+            class="article-category"
+            id="articleCategory"
+          ></span>
+
+
+          <span
+            class="article-date"
+            id="articleDate"
+          ></span>
+
+        </div>
+
+
+        <h1
+          id="articleTitle"
+        ></h1>
+
+
+        <div
+          class="article-tags"
+          id="articleTags"
+        ></div>
+
+
+      </div>
+
+
+      <div
+        class="article-content"
+        id="articleContent"
+      ></div>
+
+
+    </article>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
