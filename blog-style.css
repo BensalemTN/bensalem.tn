@@ -2029,15 +2029,20 @@ body.dark-theme .article-tags span {
 
 .article-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(0, 1fr)
+  );
   gap: 1rem;
   margin-top: 1.5rem;
+  align-items: start;
 }
 
 .article-images img {
   width: 100%;
   max-width: 450px;
-  height: auto;
+  height: 320px;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
@@ -2046,11 +2051,14 @@ body.dark-theme .article-tags span {
 
 /* Phone */
 @media (max-width: 600px) {
+
   .article-images {
     grid-template-columns: 1fr;
   }
 
   .article-images img {
     max-width: 100%;
+    height: auto;
   }
-}	
+
+}
