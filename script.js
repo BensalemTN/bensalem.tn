@@ -533,7 +533,7 @@
 		    "Training",
 		
 		  date:
-		    "2026",
+		    "October 2026",
 		
 		  tags: [
 		    "Huawei",
