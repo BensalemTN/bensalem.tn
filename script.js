@@ -407,9 +407,6 @@
 
     const articles = {
 
-		
-		"huawei-cloudcampus-training-algeria": {
-		
 		"huawei-esight-training-algeria": {
 		
 		  title:
@@ -528,6 +525,7 @@
 		  `
 		},
 			
+		"huawei-cloudcampus-training-algeria": {
 		  title:
 		    "Huawei CloudCampus Training — Algeria",
 		
