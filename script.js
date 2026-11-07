@@ -407,6 +407,114 @@
 
     const articles = {
 
+
+"huawei-cloudcampus-training-algeria": {
+
+  title:
+    "Huawei CloudCampus Training — Algeria",
+
+  category:
+    "Training",
+
+  date:
+    "2026",
+
+  tags: [
+    "Huawei",
+    "CloudCampus",
+    "iMasterNCECampus",
+    "NetworkEngineering",
+    "NAC",
+    "VXLAN",
+    "NetworkSecurity",
+    "Training",
+    "Algeria"
+  ],
+
+  excerpt:
+    "Successfully delivered a Huawei CloudCampus training program in Algeria, combining technical sessions with hands-on exercises using iMaster NCE-Campus and eLab.",
+
+  content: `
+
+    <p>
+      I am pleased to share the successful completion of a
+      <strong>Huawei CloudCampus training program in Algeria</strong>.
+    </p>
+
+    <p>
+      During this training, we explore Huawei's campus network
+      solutions, with a strong focus on practical implementation
+      using <strong>iMaster NCE-Campus</strong> and the
+      <strong>eLab environment</strong>.
+    </p>
+
+    <p>
+      The training covers several key technologies and
+      capabilities of Huawei CloudCampus solutions, including:
+    </p>
+
+    <ul>
+      <li>Huawei CloudCampus solution overview</li>
+      <li>Network Admission Control (NAC)</li>
+      <li>802.1X and MAC authentication</li>
+      <li>VXLAN-based virtualized campus network design and deployment</li>
+      <li>Wi-Fi Cloud Management and Access Point configuration</li>
+      <li>Multi-site and branch interconnection</li>
+    </ul>
+
+    <p>
+      Beyond the theoretical sessions, the program places
+      strong emphasis on <strong>hands-on laboratory exercises</strong>.
+      Using the eLab environment, participants have the
+      opportunity to configure, test and independently explore
+      different deployment scenarios, gaining practical
+      experience with the technologies covered during the training.
+    </p>
+
+    <p>
+      One of the most rewarding aspects of this experience is
+      receiving excellent feedback from the participants.
+      They describe this as the <strong>best training they have
+      attended with Huawei</strong>. Their satisfaction,
+      engagement and positive feedback make this experience
+      particularly rewarding.
+    </p>
+
+    <p>
+      I would like to extend a big thank you to all the
+      participants and everyone involved in organizing and
+      delivering this successful training program.
+    </p>
+
+    <p>
+      <strong>
+        Sharing knowledge, developing technical skills and
+        turning complex technologies into practical experience
+        remain some of the most rewarding aspects of being
+        a technical trainer.
+      </strong>
+    </p>
+
+    <br>
+
+    <p class="article-hashtags">
+
+      #Huawei
+      #CloudCampus
+      #iMasterNCECampus
+      #NetworkEngineering
+      #NAC
+      #VXLAN
+      #NetworkSecurity
+      #Training
+      #KnowledgeSharing
+      #Algeria
+
+    </p>
+
+  `
+},
+		
 		"hcna-routing-switching": {
 
 		  title:
